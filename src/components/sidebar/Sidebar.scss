@@ -1,0 +1,54 @@
+.sidebar-parent {
+  .sidebar__user-parent {
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    .user-info {
+      p:first-child {
+        font-size: 14px;
+        font-weight: 700;
+      }
+      p:last-child {
+        font-size: 14px;
+        color: rgba($color: #000000, $alpha: 0.8);
+      }
+    }
+  }
+}
+
+.profile-parent {
+  margin-top: 40px;
+  .p {
+    font-size: 0.8em;
+    font-weight: 500;
+    color: rgba($color: #000000, $alpha: 0.7);
+  }
+
+  .profile-child {
+    margin-block: 12px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    cursor: pointer;
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 70%;
+      p:first-child {
+        font-size: 12px;
+        font-weight: 700;
+      }
+      button {
+        background: none;
+        border: none;
+        font-size: 12px;
+        color: #458eff;
+        font-weight: 700;
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;900&display=swap");
+
+body {
+  font-family: "Mulish", "Ubuntu", sans-serif;
+  background-color: #fafafa;
+  color: #191919;
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  border: 2px solid rgba(63, 114, 155, 0.2);
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+
+  &:focus {
+    border: 2px solid #3f729b;
+    outline: none;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.rel-cc {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.abs {
+  position: absolute;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.avatar-parent {
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+
+  .avatar-child {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 100%;
+    background-size: cover;
+  }
+}
