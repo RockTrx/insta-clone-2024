@@ -8,12 +8,12 @@ import { getFirestore, FieldValue } from "firebase/firestore";
 
 //creating a config which help us to create a firebase instance with our credentials
 const firebaseConfig = {
-  apiKey: "AIzaSyAbmtyU5wukYJV7DGPUyz8gGiWX8zteoC0",
-  authDomain: "insta-clone-4088c.firebaseapp.com",
-  projectId: "insta-clone-4088c",
-  storageBucket: "insta-clone-4088c.appspot.com",
-  messagingSenderId: "70787332538",
-  appId: "1:70787332538:web:b38a24c237772a003e0583",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase and the required services
@@ -22,6 +22,5 @@ const db = getFirestore(firebase);
 const storage = getStorage(firebase);
 const auth = getAuth(firebase);
 
-console.log("firebase", firebase);
 
 export { firebase, db, storage, auth, FieldValue };

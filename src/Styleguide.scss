@@ -68,3 +68,9 @@ button {
     background-size: cover;
   }
 }
+
+.test-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

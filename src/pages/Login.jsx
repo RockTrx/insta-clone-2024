@@ -67,6 +67,10 @@ function Login() {
           <div className="insta-logo">
             <img src="/images/logo.png" alt="instagram logo" />
           </div>
+          <div className="test-info">
+            <span>test email - ryu@ryu.com</span>
+            <span>password - ryu1234</span>
+          </div>
           <form onSubmit={handleLogin}>
             {err && <p className="error-p">{err}</p>}
 
